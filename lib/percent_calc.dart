@@ -1,7 +1,8 @@
 library percent_calc;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+/// Percent Calc
+class PercentCalc {
+  /// Gets the actual change in value based on a given percentage.
+  static double valueChange(double currentVal, double percentageChange) =>
+      currentVal * (100 / (percentageChange + 100));
 }
